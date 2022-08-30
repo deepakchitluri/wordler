@@ -184,6 +184,13 @@ while animate:
                 Input=""
                 aipaaye = mixer.Sound('Aipaye.wav')
                 aipaaye.play()
+                screen.fill((0, 0, 0))
+                screen.blit(bg_img, (i, 0))
+                screen.blit(bg_img,(width+i,0))
+                if (i == -width):
+                    screen.blit(bg_img, (width + i, 0))
+                    i = 0
+                i -= 1
 
             elif len(Input)<5 and not game_over:
                 Input=Input+event.unicode.upper()
