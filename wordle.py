@@ -184,6 +184,7 @@ while animate:
                 Input=""
                 aipaaye = mixer.Sound('Aipaye.wav')
                 aipaaye.play()
+                bg_img = pyg.image.load('Images/bg.jpg')
                 screen.fill((0, 0, 0))
                 screen.blit(bg_img, (i, 0))
                 screen.blit(bg_img,(width+i,0))
